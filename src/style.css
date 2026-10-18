@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-white text-black;
+  }
+
+  body {
+    @apply font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display uppercase tracking-tight;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-4 ring-black ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .brutal-panel {
+    @apply border-4 border-black bg-white shadow-brutal;
+  }
+
+  .brutal-label {
+    @apply font-display text-xs uppercase tracking-wide text-black;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
