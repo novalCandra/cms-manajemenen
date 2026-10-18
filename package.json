@@ -6,7 +6,7 @@
   "description": "StokKu web client - Vue 3 + Tailwind (neo-brutalism)",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node ./node_modules/vite/bin/vite.js build",
     "preview": "vite preview",
     "typecheck": "node -e \"console.log('client uses JavaScript; typecheck handled by build')\"",
     "lint": "eslint \"src/**/*.{js,vue}\""
